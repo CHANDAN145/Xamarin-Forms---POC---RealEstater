@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="RealEstater.SelectedItemPage" >
+	<ContentPage.Content>
+		<StackLayout x:Name = "resultPageStackView" >
+			<StackLayout
+				HorizontalOptions="StartAndExpand"
+				Orientation="Horizontal">
+				<Button
+					x:Name = "backNavigationButton"
+					HorizontalOptions="Start"
+					Text = "Back" 
+					VerticalOptions ="Start"/>
+				<Label
+					x:Name = "pageTitle"
+					VerticalOptions = "Center"
+					FontSize="15"/>
+			 </StackLayout>
+
+			<Image 
+				x:Name = "houseImage"/>
+			<Label
+				x:Name = "houseAddress"
+				HorizontalOptions="Center"
+				FontAttributes="Bold"/>
+
+			<StackLayout
+				HorizontalOptions="Center"
+				Orientation="Horizontal">
+				<Label
+					x:Name = "numberOfBeds"/>
+				<Label
+					x:Name = "numberOfBaths"/>
+				<Label
+					x:Name = "houseEstimatedValue"/>
+				<Label
+					x:Name = "ChangeOverLastYear"/>
+			</StackLayout>
+
+			<Label
+				x:Name = "houseFeatures"
+				HorizontalOptions = "CenterAndExpand"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
